@@ -6,7 +6,7 @@ return array(
 	 */
 	'thewire' => "推文",
 	'thewire:everyone' => "全部推文",
-	'thewire:user' => "%s'的推文",
+	'thewire:user' => "%s的推文",
 	'thewire:friends' => "朋友的推文",
 	'thewire:replying' => "回复%s(@%s)的推文",
 	'thewire:thread' => "主贴",
@@ -21,7 +21,7 @@ return array(
 	/**
 	 * The wire river
 	 */
-	'river:create:object:thewire' => "%s贴到%s",
+	'river:create:object:thewire' => "%s发布%s",
 	'thewire:wire' => '推文',
 
 	/**
@@ -46,7 +46,7 @@ return array(
 	 */
 	'thewire:notify:summary' => '新帖: %s',
 	'thewire:notify:subject' => "%s的新帖",
-	'thewire:notify:reply' => '%s 回应 %s 在推文:',
+	'thewire:notify:reply' => '%s回复%s:',
 	'thewire:notify:post' => '%s发布推文:',
 	'thewire:notify:footer' => "查看并且回复:\n%s",
 
