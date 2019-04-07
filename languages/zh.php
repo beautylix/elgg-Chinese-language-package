@@ -1258,14 +1258,17 @@ return array(
  * Entities
  */
 	
-	'byline' => '作者 %s',
-	'entity:default:strapline' => '创建%s经由%s',
+	'byline' => '作者%s',
+	'byline:ingroup' => '在小组%s',
 	'entity:default:missingsupport:popup' => '此单元不能正确显示，可能它需要尚未安装的插件的支持',
-
+	'entity:delete:item' => '项目',
+	'entity:delete:item_not_found' => '项目未能发现.',
+	'entity:delete:permission_denied' => '你无权删除此项目.',
 	'entity:delete:success' => '%s单元已经被删除',
 	'entity:delete:fail' => '%s单元不能被删除',
 	
-	'entity:can_delete:invaliduser' => '不能检查，但是能够删除不存在的用户[%s] ',
+	'entity:can_delete:invaliduser' => '由于用户不存在，无法通过canDelete() 删除user_guid [%s]的用户 ',
+
 
 /**
  * Action gatekeeper
