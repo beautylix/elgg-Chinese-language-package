@@ -255,7 +255,7 @@ return array(
 	'avatar:remove' => '去除你的头像，设置默认图标',
 	'avatar:crop:title' => '头像裁剪工具',
 	'avatar:upload:instructions' => "你的头像已经显示，你随时可以改变自己的头像. (可以接受的文件格式d: GIF, JPG or PNG)",
-	'avatar:create:instructions' => '点击并且拖拽一个方框去裁剪你的头像. 右边的盒子中会出现预览图像. 当你满意的时候，点击 \'创建头像\'. 这个裁剪版本的头像将被使用”，
+	'avatar:create:instructions' => "点击并且拖拽一个方框去裁剪你的头像. 右边的盒子中会出现预览图像. 当你满意的时候，点击 \'创建头像\'. 这个裁剪版本的头像将被使用",
 	'avatar:upload:fail' => '头像上传失败',
 	'avatar:resize:fail' => '缩减头像失败',
 	'avatar:crop:success' => '裁剪头像成功',
