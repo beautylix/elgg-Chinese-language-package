@@ -1,23 +1,19 @@
 <?php
 return array(
-	'blog' => '文章',
-	'blog:blogs' => '文章',
+	'item:object:blog' => '文章',
+	'collection:object:blog' => '文章',
+	'collection:object:blog:all' => '全部文章',
+	'collection:object:blog:owner' => '%s\'的文章',
+	'collection:object:blog:group' => '小组文章',
+	'collection:object:blog:friends' => '好友的文章',
+	'add:object:blog' => '添加文章',
+	'edit:object:blog' => '编辑文章',
 	'blog:revisions' => '修订',
 	'blog:archives' => '归档',
-	'blog:blog' => '文章',
-	'item:object:blog' => '文章',
-
-	'blog:title:user_blogs' => '%s 的文章',
-	'blog:title:all_blogs' => '全站所有文章',
-	'blog:title:friends' => '好友的文章',
-
-	'blog:group' => '小组文章',
-	'blog:enableblog' => '开启小组文章',
+	'groups:tool:blog' => '开启小组文章',
 	'blog:write' => '撰写文章',
 
 	// Editing
-	'blog:add' => '添加文章',
-	'blog:edit' => '编辑文章',
 	'blog:excerpt' => '摘录',
 	'blog:body' => '正文',
 	'blog:save_status' => '最后保存',
@@ -59,8 +55,8 @@ return array(
 ',
 
 	// widget
-	'blog:widget:description' => '显示你最近的文章',
+	'widgets:blog:name' => '文章',
+	'widgets:blog:description' => '显示你的最新文章',
 	'blog:moreblogs' => '更多文章',
-	'blog:numbertodisplay' => '要显示的文章数',
-	'blog:noblogs' => '没有文章'
+	'blog:numbertodisplay' => '需要显示的文章数量',
 );
