@@ -3,7 +3,7 @@ return array(
 	'item:object:blog' => '文章',
 	'collection:object:blog' => '文章',
 	'collection:object:blog:all' => '全部文章',
-	'collection:object:blog:owner' => '%s\'的文章',
+	'collection:object:blog:owner' => '%s的文章',
 	'collection:object:blog:group' => '小组文章',
 	'collection:object:blog:friends' => '好友的文章',
 	'add:object:blog' => '添加文章',
