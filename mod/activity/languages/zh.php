@@ -14,6 +14,6 @@ return array(
 	'widgets:group_activity:content:noselect' => '编辑此组件选择一个小组',
 	
 	'collection:river:group' => "小组活动",
-	'groups:tool:activity' => '开启小组活动,
+	'groups:tool:activity' => '开启小组活动',
 	
 );
