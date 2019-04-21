@@ -4,13 +4,18 @@ return array(
 	/**
 	 * Menu items and titles
 	 */
-	'file' => "文件",
-	'file:user' => "%s 的文件",
-	'file:friends' => "好友的文件",
-	'file:all' => "全站文件",
-	'file:edit' => "编辑文件",
+	'item:object:file' => '文件',
+	'collection:object:file' => '文件',
+	'collection:object:file:all' => "全部文件",
+	'collection:object:file:owner' => "%s的文件",
+	'collection:object:file:friends' => "好友的文件",
+	'collection:object:file:group' => "小组文件",
+	'add:object:file' => "上传一个文件",
+	'edit:object:file' => "编辑文件",
+	
 	'file:more' => "更多文件",
 	'file:list' => "列表视图",
+	
 	'file:group' => "小组文件",
 	'file:gallery' => "陈列视图",
 	'file:gallery_list' => "陈列或列表视图",
