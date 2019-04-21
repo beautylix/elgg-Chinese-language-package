@@ -5,9 +5,13 @@ return array(
 	 * Menu items and titles
 	 */
 	'thewire' => "推文",
-	'thewire:everyone' => "全部推文",
-	'thewire:user' => "%s的推文",
-	'thewire:friends' => "朋友的推文",
+
+	'item:object:thewire' => "推文",
+	'collection:object:thewire' => '推文',
+	'collection:object:thewire:all' => "全部推文",
+	'collection:object:thewire:owner' => "%s的推文",
+	'collection:object:thewire:friends' => "好友的推文",
+
 	'thewire:replying' => "回复%s(@%s)的推文",
 	'thewire:thread' => "主贴",
 	'thewire:charleft' => "剩余的字符",
@@ -18,10 +22,12 @@ return array(
 	'thewire:previous:help' => "查看先前的推文",
 	'thewire:hide:help' => "隐藏先前的推文",
 
+	'thewire:form:body:placeholder' => "最新鲜",
+
 	/**
 	 * The wire river
 	 */
-	'river:create:object:thewire' => "%s发布%s",
+	'river:object:thewire:create' => "%s发布%s",
 	'thewire:wire' => '推文',
 
 	/**
