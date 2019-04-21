@@ -4,19 +4,18 @@ return array(
 	/**
 	 * Menu items and titles
 	 */
-	'bookmarks' => "书签",
-	'bookmarks:add' => "添加书签",
-	'bookmarks:edit' => "编辑书签",
-	'bookmarks:owner' => "%s 的书签",
-	'bookmarks:friends' => "好友的书签",
-	'bookmarks:everyone' => "全站的所有书签",
-	'bookmarks:this' => "将本页面添加书签",
-	'bookmarks:this:group' => "%s 中的书签",
-	'bookmarks:bookmarklet' => "获取书签小工具",
-	'bookmarks:bookmarklet:group' => "获取小组书签小工具",
-	'bookmarks:inbox' => "书签收件箱",
-	'bookmarks:with' => "共享给",
-	'bookmarks:new' => "新书签",
+	'item:object:bookmarks' => '书签',
+	'collection:object:bookmarks' => '书签',
+	'collection:object:bookmarks:group' => '小组书签',
+	'collection:object:bookmarks:all' => "全部书签",
+	'collection:object:bookmarks:owner' => "%s'的书签",
+	'collection:object:bookmarks:friends' => "好友的书签",
+	'add:object:bookmarks' => "添加书签",
+	'edit:object:bookmarks' => "编辑书签",
+	'bookmarks:this' => "将此页加入书签",
+	'bookmarks:this:group' => "添加书签于%s",
+	'bookmarks:bookmarklet' => "书签列",
+	'bookmarks:bookmarklet:group' => "小组书签列",
 	'bookmarks:address' => "书签地址",
 	'bookmarks:none' => '没有书签',
 
@@ -33,28 +32,16 @@ return array(
 %s
 ',
 
-	'bookmarks:delete:confirm' => "你确定删除这个资源？",
-
 	'bookmarks:numbertodisplay' => '要显示的书签个数',
 
-	'bookmarks:shared' => "已添加书签",
-	'bookmarks:visit' => "访问资源",
-	'bookmarks:recent' => "近期的书签",
-
-	'river:create:object:bookmarks' => '%s 将 %s 添加为书签',
-	'river:comment:object:bookmarks' => '%s 评论了书签 %s',
-	'bookmarks:river:annotate' => '此书签的一条评论',
-	'bookmarks:river:item' => '一个项目',
-
-	'item:object:bookmarks' => '书签',
-
-	'bookmarks:group' => '小组书签',
-	'bookmarks:enablebookmarks' => '开启小组书签',
-	'bookmarks:nogroup' => '本小组尚未添加任何书签',
+	'river:object:bookmarks:create' => '%s添加%s到书签',
+	'river:object:bookmarks:comment' => '%s评论了书签%s',
+	'groups:tool:bookmarks' => '开启小组书签',
 	
 	/**
 	 * Widget and bookmarklet
 	 */
+	'widgets:bookmarks:name' => '书签',	
 	'bookmarks:widget:description' => "显示你最近的书签",
 
 	'bookmarks:bookmarklet:description' =>
@@ -78,7 +65,5 @@ return array(
 	 */
 
 	'bookmarks:save:failed' => "书签无法保存请确认正确输入了标题和地址后再尝试",
-	'bookmarks:save:invalid' => "书签的地址无效，无法保存",
-	'bookmarks:delete:failed' => "书签无法删除请重试",
 	'bookmarks:unknown_bookmark' => '无法找到特定的书签',
 );
