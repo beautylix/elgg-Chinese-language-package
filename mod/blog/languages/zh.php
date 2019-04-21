@@ -38,8 +38,8 @@ return array(
 	'blog:error:revision_not_found' => '无法找到该修订版本。',
 
 	// river
-	'river:create:object:blog' => '%s 发表了一篇文章 %s',
-	'river:comment:object:blog' => '%s 评论了文章 %s',
+	'river:object:blog:create' => '%s 发表了一篇文章 %s',
+	'river:object:blog:comment' => '%s 评论了文章 %s',
 
 	// notifications
 	'blog:notify:summary' => '新文章 %s',
