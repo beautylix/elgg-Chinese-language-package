@@ -31,7 +31,7 @@ return array(
 	'adminrequired' => "此页仅限管理员查看",
 	'membershiprequired' => "此页仅限小组成员查看",
 	'limited_access' => "你尚无权限查看此页",
-	'invalid_request_signature' => "你正在访问的页面的URL无效或者已经过期."
+	'invalid_request_signature' => "你正在访问的页面的URL无效或者已经过期",
 
 
 /**
