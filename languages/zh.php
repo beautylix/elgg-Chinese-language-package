@@ -4,7 +4,10 @@ return array(
  * Sites
  */
 
-	'item:site' => '页面',
+	'item:site:site' => '页面',
+	'collection:site:site' => '页面',
+	'index:content' => '<p>欢迎来到页面</p><p><strong>提示:</strong> 许多页面用 <code>activity</code> 插件放置许多活动流.</p>',
+
 
 /**
  * Sessions
@@ -21,11 +24,14 @@ return array(
 	'logoutok' => "你已经登出",
 	'logouterror' => "无法登出 请重新尝试",
 	'session_expired' => "你的session已经过期 请重新装载页面登录",
+	'session_changed_user' => "你已经已另一个身份登入，你应该<a href='javascript:location.reload(true)'>重载</a>此页.",
 
 	'loggedinrequired' => "此页仅限登录用户查看",
+	'loggedoutrequired' => "此页面仅限未登录用户查看.",
 	'adminrequired' => "此页仅限管理员查看",
 	'membershiprequired' => "此页仅限小组成员查看",
 	'limited_access' => "你尚无权限查看此页",
+	'invalid_request_signature' => "你正在访问的页面的URL无效或者已经过期."
 
 
 /**
@@ -129,6 +135,32 @@ return array(
 	'upload:error:extension' => '无法保存上传的文件',
 	'upload:error:unknown' => '文件上传失败',
 
+/**
+ * Table columns
+ */
+	'table_columns:fromView:admin' => '管理员',
+	'table_columns:fromView:banned' => '已经禁止',
+	'table_columns:fromView:container' => '容器',
+	'table_columns:fromView:excerpt' => '描述',
+	'table_columns:fromView:link' => '名称/标题',
+	'table_columns:fromView:icon' => '图标',
+	'table_columns:fromView:item' => '项目',
+	'table_columns:fromView:language' => '语言',
+	'table_columns:fromView:owner' => '所有者',
+	'table_columns:fromView:time_created' => '创建时间',
+	'table_columns:fromView:time_updated' => '更新时间',
+	'table_columns:fromView:user' => '用户',
+
+	'table_columns:fromProperty:description' => '描述',
+	'table_columns:fromProperty:email' => '电邮',
+	'table_columns:fromProperty:name' => '名字',
+	'table_columns:fromProperty:type' => '类型',
+	'table_columns:fromProperty:username' => '用户名',
+
+	'table_columns:fromMethod:getSubtype' => '子类型',
+	'table_columns:fromMethod:getDisplayName' => '名字/标题',
+	'table_columns:fromMethod:getMimeType' => 'MIME类型',
+	'table_columns:fromMethod:getSimpleType' => '类型',
 
 /**
  * User details
@@ -141,17 +173,18 @@ return array(
 	'password' => "密码",
 	'passwordagain' => "再次输入密码",
 	'admin_option' => "标记此用户为管理员?",
+	'autogen_password_option' => "自动产生一个安全密码?",
 
 /**
  * Access
  */
 
-	'PRIVATE' => "私用",
-	'LOGGED_IN' => "登录用户",
-	'PUBLIC' => "公开",
-	'LOGGED_OUT' => "登出的用户",
-	'access:friends:label' => "好友",
-	'access' => "访问",
+	'access:label:private' => "私用",
+	'access:label:logged_in' => "登录用户",
+	'access:label:public' => "公开",
+	'access:label:logged_out' => "登出用户",
+	'access:label:friends' => "好友",
+	'access' => "谁能查看",
 	'access:overridenotice' => "仅小组成员可以访问此内容",
 	'access:limited:label' => "访问受限",
 	'access:help' => "访问级别",
@@ -187,6 +220,7 @@ return array(
 	'widgets:add:failure' => "无法添加应用",
 	'widgets:move:failure' => "无法存储新的应用位置",
 	'widgets:remove:failure' => "无法去除此应用",
+	'widgets:not_configured' => "此应用仍然没有被配置",
 
 /**
  * Groups
@@ -194,6 +228,10 @@ return array(
 
 	'group' => "小组",
 	'item:group' => "小组",
+	'collection:group' => '小组',
+	'item:group:group' => "小组",
+	'collection:group:group' => '小组',
+	'groups:tool_gatekeeper' => "请求的功能在此小组没有开启",
 
 /**
  * Users
@@ -201,115 +239,39 @@ return array(
 
 	'user' => "用户",
 	'item:user' => "用户",
-
-/**
- * Friends
- */
+	'collection:user' => '用户',
+	'item:user:user' => '用户',
+	'collection:user:user' => '用户',
 
 	'friends' => "好友",
-	'friends:yours' => "你的好友",
-	'friends:owned' => "%s的好友",
-	'friend:add' => "加为好友",
-	'friend:remove' => "删除好友",
-
-	'friends:add:successful' => "成功添加%s作为好友",
-	'friends:add:failure' => "无法添加%s作为好友",
-
-	'friends:remove:successful' => "成功将%s从好友名单去除",
-	'friends:remove:failure' => "无法将%s从你的好友名单去除",
-
-	'friends:none' => "尚无好友",
-	'friends:none:you' => "尚无任何好友",
-
-	'friends:none:found' => "未发现好友",
-
-	'friends:of:none' => "尚无人加此用户为好友",
-	'friends:of:none:you' => "无人加你为好友，请增加内容，充实首页，让更多人发现你!",
-
-	'friends:of:owned' => "%s的好友",
-
-	'friends:of' => "全部关注",
-	'friends:collections' => "关注分组",
-	'collections:add' => "新加关注",
-	'friends:collections:add' => "新加关注",
-	'friends:addfriends' => "选择好友",
-	'friends:collectionname' => "关注名称",
-	'friends:collectionfriends' => "关注好友",
-	'friends:collectionedit' => "编辑关注",
-	'friends:nocollections' => "尚无关注",
-	'friends:collectiondeleted' => "你的关注已被删除",
-	'friends:collectiondeletefailed' => "我们无法删除此关注，你无权限或者有其他问题",
-	'friends:collectionadded' => "成功创建关注",
-	'friends:nocollectionname' => "先输入关注名称",
-	'friends:collections:members' => "关注的成员",
-	'friends:collections:edit' => "编辑关注",
-	'friends:collections:edited' => "保存关注",
-	'friends:collection:edit_failed' => '无法保存关注',
-
-	'friendspicker:chararray' => 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+	'collection:friends' => '好友 %s',
 
 	'avatar' => '头像',
-	'avatar:noaccess' => "你不被允许编辑此用户头像",
+	'avatar:noaccess' => "你无权编辑此用户的头像",
 	'avatar:create' => '创建你的头像',
 	'avatar:edit' => '编辑头像',
-	'avatar:preview' => '预览',
-	'avatar:upload' => '上传新的头像',
+	'avatar:upload' => '上传一个新的头像',
 	'avatar:current' => '当前头像',
-	'avatar:remove' => '去除头像，设定默认图标',
+	'avatar:remove' => '去除你的头像，设置默认图标',
 	'avatar:crop:title' => '头像裁剪工具',
-	'avatar:upload:instructions' => "你的头像显示于整个页面，你能随时改变，图片类型是: GIF, JPG or PNG",
-	'avatar:create:instructions' => '点击拖拽下面的方框，裁剪出自己满意的头像，右边是预览图，点击 创建头像，你的头像添加工作完成',
-	'avatar:upload:success' => '头像成功上传',
+	'avatar:upload:instructions' => "你的头像已经显示，你随时可以改变自己的头像. (可以接受的文件格式d: GIF, JPG or PNG)",
+	'avatar:create:instructions' => '点击并且拖拽一个方框去裁剪你的头像. 右边的盒子中会出现预览图像. 当你满意的时候，点击 \'创建头像\'. 这个裁剪版本的头像将被使用”，
 	'avatar:upload:fail' => '头像上传失败',
-	'avatar:resize:fail' => '调整图像尺寸失败',
-	'avatar:crop:success' => '头像裁剪成功',
+	'avatar:resize:fail' => '缩减头像失败',
+	'avatar:crop:success' => '裁剪头像成功',
 	'avatar:crop:fail' => '头像裁剪失败',
-	'avatar:remove:success' => '头像去除成功',
+	'avatar:remove:success' => '成功去除头像',
 	'avatar:remove:fail' => '头像去除失败',
-
-	'profile:edit' => '编辑首页',
-	'profile:aboutme' => "关于我",
-	'profile:description' => "关于我",
-	'profile:briefdescription' => "简要描述",
-	'profile:location' => "位置",
-	'profile:skills' => "技能",
-	'profile:interests' => "兴趣",
-	'profile:contactemail' => "联系Email",
-	'profile:phone' => "电话",
-	'profile:mobile' => "手机",
-	'profile:website' => "网站",
-	'profile:twitter' => "Twitter账号",
-	'profile:saved' => "首页已经成功保存",
-
-	'profile:field:text' => '短文本',
-	'profile:field:longtext' => '大文本区',
-	'profile:field:tags' => '标签',
-	'profile:field:url' => '网站地址',
-	'profile:field:email' => 'Email地址',
-	'profile:field:location' => '位置',
-	'profile:field:date' => '日期',
-
-	'admin:appearance:profile_fields' => '编辑首页字段',
-	'profile:edit:default' => '编辑首页字段',
-	'profile:label' => "首页标签",
-	'profile:type' => "首页类型",
-	'profile:editdefault:delete:fail' => '去除首页字段失败',
-	'profile:editdefault:delete:success' => '首页字段已经删除',
-	'profile:defaultprofile:reset' => '首页字段复位到系统默认值',
-	'profile:resetdefault' => '复位首页字段到系统默认值',
-	'profile:resetdefault:confirm' => '确认想删除你的定制首页字段?',
-	'profile:explainchangefields' => "你能用下面的表单去定制自己的首页字段 \n\n 给新的字段一个标签，比如 '最喜欢的小组', 然后选择字段类型(例如：文本，URL，标签), 然后点击 '添加' 按钮，拖拽重新排序字段，点击字段标签的文本使其进入可编辑状态，然后重新编辑\n\n 任何时候你都可以回到默认的首页设置，但你将丢失定制的数据信息",
-	'profile:editdefault:success' => '新的首页字段已经添加',
-	'profile:editdefault:fail' => '默认字段不能保存',
-	'profile:field_too_long' => '因为字段"%s"太长，无法保存',
-	'profile:noaccess' => "你无权编辑此首页",
-	'profile:invalid_email' => '%s 必须是一个有效的Email地址',
-
+	
+	'action:user:validate:already' => "%s已经验证",
+	'action:user:validate:success' => "%s已被验证",
+	'action:user:validate:error' => "验证%s时出现错误",
 
 /**
  * Feeds
  */
 	'feed:rss' => 'RSS订阅',
+	'feed:rss:title' => '此页面的RSS feed',
 /**
  * Links
  */
@@ -774,11 +736,6 @@ return array(
 	'river:comments:all' => '查看 %u 的全部评论',
 	'river:generic_comment' => '评论于 %s %s',
 
-	'friends:widget:description' => "显示好友",
-	'friends:num_display' => "显示好友数量",
-	'friends:icon_size' => "图标尺寸",
-	'friends:tiny' => "极小",
-	'friends:small' => "小",
 
 /**
  * Icons
@@ -792,6 +749,9 @@ return array(
 	'icon:size:large' => "大",
 	'icon:size:master' => "特大",
 		
+	'entity:edit:icon:file:label' => "上传一个新的图标",
+	'entity:edit:icon:file:help' => "留空保留当前的图标.",
+	'entity:edit:icon:remove:label' => "去除图标",
 /**
  * Generic action words
  */
@@ -958,6 +918,8 @@ return array(
 	'deleteconfirm' => "确定想删除此项目?",
 	'deleteconfirm:plural' => "确定想删除此项目?",
 	'fileexists' => "一个文件已经上传去替换, 从下面选择:",
+	'input:file:upload_limit' => '最大允许的文件大小是 %s',
+
 
 /**
  * User add
@@ -984,7 +946,14 @@ return array(
  */
 
 	'systemmessages:dismiss' => "点击去解除",
-
+/**
+ * Messages
+ */
+	'messages:title:success' => '成功',
+	'messages:title:error' => '错误',
+	'messages:title:warning' => '警告',
+	'messages:title:help' => '帮助',
+	'messages:title:notice' => '通知',
 
 /**
  * Import / export
@@ -1026,6 +995,19 @@ return array(
 	'date:month:11' => '十一月 %s',
 	'date:month:12' => '十二月 %s',
 
+	'date:month:short:01' => '一月 %s',
+	'date:month:short:02' => '二月 %s',
+	'date:month:short:03' => '三月 %s',
+	'date:month:short:04' => '四月 %s',
+	'date:month:short:05' => '五月 %s',
+	'date:month:short:06' => '六月 %s',
+	'date:month:short:07' => '七月 %s',
+	'date:month:short:08' => '八月 %s',
+	'date:month:short:09' => '九月 %s',
+	'date:month:short:10' => '十月 %s',
+	'date:month:short:11' => '十一月 %s',
+	'date:month:short:12' => '十二月 %s',
+
 	'date:weekday:0' => '星期天',
 	'date:weekday:1' => '星期一',
 	'date:weekday:2' => '星期二',
@@ -1033,6 +1015,14 @@ return array(
 	'date:weekday:4' => '星期四',
 	'date:weekday:5' => '星期五',
 	'date:weekday:6' => '星期六',
+
+	'date:weekday:short:0' => '周日',
+	'date:weekday:short:1' => '周一',
+	'date:weekday:short:2' => '周二',
+	'date:weekday:short:3' => '周三',
+	'date:weekday:short:4' => '周四',
+	'date:weekday:short:5' => '周五',
+	'date:weekday:short:6' => '周六',
 	
 	'interval:minute' => '每分钟',
 	'interval:fiveminute' => '每五分钟',
@@ -1043,7 +1033,7 @@ return array(
 	'interval:weekly' => '每周',
 	'interval:monthly' => '每月',
 	'interval:yearly' => '每年',
-	'interval:reboot' => '每次重启',
+
 
 /**
  * System settings
@@ -1214,8 +1204,9 @@ return array(
  * Comments
  */
 
-	'comments:count' => "%s 评论",
+	'comments:count' => "%s评论",
 	'item:object:comment' => '评论',
+	'collection:object:comment' => '评论',
 
 	'river:comment:object:default' => '%s 评论于 %s',
 
@@ -1455,4 +1446,6 @@ return array(
 	"za" => "Zuang",
 	"zh" => "中文",
 	"zu" => "Zulu",
+
 );
+
