@@ -123,10 +123,11 @@ View and reply to the discussion:
 
 	'groupforumtopic:new' => "添加讨论帖",
 
+	'groups:count' => "创建的小组",
 	'groups:open' => "开放的小组",
 	'groups:closed' => "封闭的小组",
 	'groups:member' => "成员",
-	'groups:search' => "搜索小组",
+	'groups:searchtag' => "通过标签搜索小组",
 
 	'groups:more' => '更多小组',
 	'groups:none' => '没有小组',

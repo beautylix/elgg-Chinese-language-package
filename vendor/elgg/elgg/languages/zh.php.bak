@@ -1185,22 +1185,6 @@ return array(
 	'entity:delete:permission_denied' => '您还没有权限删除此项目。',
 	'entity:delete:success' => '%s 已删除。',
 	'entity:delete:fail' => '%s 删除失败。',
-	'entity:subscribe' => "订阅",
-	'entity:subscribe:disabled' => "你的默认通知设置阻止你订阅此内容",
-	'entity:subscribe:success' => "你已经成功订阅了%s",
-	'entity:subscribe:fail' => "订阅%s时发生了一个错误",
-	
-	'entity:unsubscribe' => "取消订阅",
-	'entity:unsubscribe:success' => "你已经成功取消了来自%s的订阅",
-	'entity:unsubscribe:fail' => "取消来自%s的订阅时发生了一个错误",
-	
-	'entity:mute' => "通知静音",
-	'entity:mute:success' => "你已经成功静音了来自%s的通知",
-	'entity:mute:fail' => "对来自%s的通知静音时发生了一个错误",
-	
-	'entity:unmute' => "取消静音",
-	'entity:unmute:success' => "你已对来自%s的订阅取消静音",
-	'entity:unmute:fail' => "当对来自%s的通知进行取消静音时发生了一个错误",
 
 /**
  * Annotations
