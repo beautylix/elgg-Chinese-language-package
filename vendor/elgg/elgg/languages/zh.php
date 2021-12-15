@@ -259,7 +259,7 @@ return array(
 	'river:posted:generic' => '%s 发布',
 	'riveritem:single:user' => '单用户',
 	'riveritem:plural:user' => '多用户',
-	'river:ingroup' => '在小组%s中',
+	'river:ingroup' => '在%s小组',
 	'river:none' => '还没有活动',
 	'river:update' => '%s的更新',
 	'river:delete' => '删除该活动',
@@ -391,6 +391,26 @@ return array(
 
 	'admin' => "管理",
 	'admin:description' => "管理面板允许你控制系统的各个方面，从用户管理到插件行为，从下面选择一个选项开始。",
+
+
+'admin:performance' => '性能优化',
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	'admin:statistics' => '统计',
 	'admin:server' => '服务器信息',
@@ -430,8 +450,10 @@ return array(
 
 	'admin:settings' => '设置',
 	'admin:settings:basic' => '基本设置',
+	'admin:settings:i18n' => '国际化',
 	'admin:settings:advanced' => '高级设置',
 	'admin:settings:users' => '用户',
+	'admin:site_settings' => "页面设置",
 	'admin:site:description' => "管理面板允许你控制全局设置，从下面选择一个选项开始.",
 	'admin:site:opt:linktext' => "配置网站...",
 	'admin:settings:in_settings_file' => '此设置在settings.php里面配置',
@@ -473,12 +495,16 @@ return array(
 
 	'admin:cache:flush' => '清除缓存',
 	'admin:cache:flushed' => "网站的缓存已清除",
-
+	'admin:cache:invalidate' => '清除缓存',
+	'admin:cache:invalidated' => "网站的缓存已被清除",
+	'admin:cache:clear' => '清除缓存',
+	'admin:cache:cleared' => "网站的缓存已被清除",
+	'admin:cache:purge' => '清除缓存',
+	'admin:cache:purged' => "网站的缓存已被清除",
 	'admin:footer:faq' => '管理FAQ',
 	'admin:footer:manual' => '管理手册',
 	'admin:footer:community_forums' => 'Elgg社区论坛',
 	'admin:footer:blog' => 'Elgg文章',
-
 	'admin:plugins:category:all' => '全部插件',
 	'admin:plugins:category:active' => '激活的插件',
 	'admin:plugins:category:inactive' => '未激活的插件',
@@ -808,7 +834,7 @@ return array(
 	'validate' => '验证',
 	'next' => '下一页',
 	'previous' => '上一页',
-    'older' => '老帖',
+    'older' => '旧帖',
 	'newer' => '新帖',
 	
 	'site' => '网站',

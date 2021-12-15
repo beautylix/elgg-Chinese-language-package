@@ -34,7 +34,7 @@ return array(
 
 	'bookmarks:numbertodisplay' => '要显示的书签个数',
 
-	'river:object:bookmarks:create' => '%s添加%s到书签',
+	'river:object:bookmarks:create' => '%s添加了书签%s',
 	'river:object:bookmarks:comment' => '%s评论了书签%s',
 	'groups:tool:bookmarks' => '开启小组书签',
 	

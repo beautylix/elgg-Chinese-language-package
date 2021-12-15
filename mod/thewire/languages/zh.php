@@ -27,7 +27,7 @@ return array(
 	/**
 	 * The wire river
 	 */
-	'river:object:thewire:create' => "%s发布%s",
+	'river:object:thewire:create' => "%s发表了%s",
 	'thewire:wire' => '推文',
 
 	/**
