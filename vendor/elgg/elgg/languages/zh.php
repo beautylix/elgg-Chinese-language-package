@@ -684,7 +684,7 @@ return array(
 	'admin:security:settings:notify_user_admin:help' => '当管理员角色变化时当事人将收到通知.',
 	
 	'admin:security:settings:notify_user_ban' => '当用户的账户被禁或者解禁时通知当事人',
-	'admin:security:settings:notify_user_ban:help' => '用户账户被禁或者解禁将收到通知.',
+	'admin:security:settings:notify_user_ban:help' => '用户的账户被禁或者解禁将收到通知.',
 	
 	'admin:security:settings:notify_user_password' => '用户修改密码时通知当事人',
 	'admin:security:settings:notify_user_password:help' => '用户修改密码时会收到通知.',
@@ -1149,16 +1149,16 @@ return array(
 	'status' => '状态',
 	'status:unsaved_draft' => '未保存的草稿',
 	'status:draft' => '草稿',
-	'status:unpublished' => '未发布的',
-	'status:published' => '已发布的',
-	'status:featured' => '有特色的',
+	'status:unpublished' => '未发布',
+	'status:published' => '已发布',
+	'status:featured' => '有特色',
 	'status:open' => '已开放',
 	'status:closed' => '已关闭',
 	'status:enabled' => '已开启',
 	'status:disabled' => '已禁用',
 	'status:unavailable' => '不可用',
-	'status:active' => '启用的',
-	'status:inactive' => '未启用的',
+	'status:active' => '已启用',
+	'status:inactive' => '未启用',
 
 /**
  * Generic sorts
@@ -1218,8 +1218,8 @@ return array(
  * User add
  */
 
-	'useradd:subject' => '用户账户已经创建',
-	'useradd:body' => '你在%s的用户账户已经被创建，请访问:
+	'useradd:subject' => '账户已创建',
+	'useradd:body' => '你在%s的账户已经被创建，请访问:
 
 %s
 
@@ -1339,7 +1339,7 @@ return array(
 	'installation:debug:info' => '记录全部',
 
 	// Walled Garden support
-	'installation:registration:description' => '如果开启，访客可以创建自己的用户账户.',
+	'installation:registration:description' => '如果开启，访客可以创建自己的账户.',
 	'installation:registration:label' => '允许访客注册',
 	'installation:adminvalidation:description' => '如果开启，新注册用户要求网站管理员手工验证.',
 	'installation:adminvalidation:label' => '新用户要求管理员验证',
@@ -1347,7 +1347,7 @@ return array(
 	'installation:adminvalidation:notification:label' => '通知管理员有等待的用户验证',
 	'installation:adminvalidation:notification:direct' => '直接',
 	'installation:walled_garden:description' => '如果开启, 未登录访客只能查看标记为公开的内容.',
-	'installation:walled_garden:label' => '限制页面给登录用户',
+	'installation:walled_garden:label' => '仅限登录用户',
 
 	'installation:view' => "输入网站的默认视图或者留空(如果怀疑, 默认留空):",
 
@@ -1357,7 +1357,7 @@ return array(
 
 	'admin:site:access:warning' => "这是用户创建内容时给他们的隐私建议. 修改不会影响内容的访问.",
 	'installation:allow_user_default_access:description' => "开启允许用户设置他们自己的隐私建议覆盖系统的建议.",
-	'installation:allow_user_default_access:label' => "允许用户默认访问",
+	'installation:allow_user_default_access:label' => "允许用户自设默认访问权限",
 
 	'installation:simplecache:description' => "简单缓存通过缓存静态内容，包括CSS和JavaScript文件，增强网站性能.",
 	'installation:simplecache:label' => "使用简单缓存(推荐)",
@@ -1387,17 +1387,17 @@ return array(
 	
 	'config:i18n:allowed_languages' => "允许语言",
 	'config:i18n:allowed_languages:help' => "用户仅能使用允许语言. 英语和网站语言总是允许的.",
-	'config:users:can_change_username' => "允许用户改变用户名",
-	'config:users:can_change_username:help' => "如果不允许，仅仅管理员能改变用户的用户名",
+	'config:users:can_change_username' => "允许用户修改用户名",
+	'config:users:can_change_username:help' => "如果不允许，仅仅管理员能修改用户的用户名",
 	'config:remove_branding:label' => "去除Elgg品牌",
 	'config:remove_branding:help' => "页面上大量的链接和logo显示此网站使用Elgg，如果你去除了品牌，请到https://elgg.org/about/supporters捐助",
 	'config:disable_rss:label' => "禁用RSS订阅",
 	'config:disable_rss:help' => "禁用后将不再有RSS聚合",
 	'config:friendly_time_number_of_days:label' => "呈现友好时间的天数",
 	'config:friendly_time_number_of_days:help' => "配置友好时间的天数. 超过这个天数后，时间将转为常规日期格式. 设置为0将禁用友好时间格式.",
-	'config:content:comment_box_collapses' => "评论框崩溃",
+	'config:content:comment_box_collapses' => "评论框折叠",
 	'config:content:comment_box_collapses:help' => "仅用于最新评论靠前",
-	'config:content:comments_latest_first' => "评论应该是最新的在最前面",
+	'config:content:comments_latest_first' => "最新评论在最前面",
 	'config:content:comments_latest_first:help' => "控制评论列表的默认行为. 如果禁用，评论框将移到评论列表的底部",
 	'config:content:comments_per_page' => "每页评论数量",
 	'config:content:pagination_behaviour' => "默认列表分页行为",
