@@ -1,9 +1,18 @@
 <?php
 
 return array(
+	'item:object:discussion' => "讨论主题",
 	'add:object:discussion' => '添加讨论主题',
 	'edit:object:discussion' => '编辑主题',
+	'collection:object:discussion' => '讨论主题',
 	'collection:object:discussion:group' => '小组讨论',
+	'collection:object:discussion:my_groups' => '我的小组的讨论',
+	'notification:object:discussion:create' => "有讨论时发送通知",
+	'notifications:mute:object:discussion' => "关于'%s'讨论",
+	
+	'discussion:settings:enable_global_discussions' => '开启全局讨论',
+	'discussion:settings:enable_global_discussions:help' => '运行在小组外创建讨论',
+	
 	'discussion:latest' => '最新讨论',
 	'discussion:none' => '没有讨论',
 	'discussion:updated' => "%s最后回复%s",
@@ -16,6 +25,7 @@ return array(
 	'discussion:error:notsaved' => '不能保存主题',
 	'discussion:error:missing' => '标题和内容为必填',
 	'discussion:error:permissions' => '你无权采取这种行动',
+	'discussion:error:no_groups' => "你不是任何小组的成员.",
 
 
 	/**
@@ -61,7 +71,12 @@ return array(
 	 * Discussion status
 	 */
 	'discussion:topic:status' => '主题状态',
-	'discussion:topic:closed:title' => '此讨论已被关闭.',
-	'discussion:topic:closed:desc' => '此讨论已经关闭，不再接收新的评论.',
+	'discussion:topic:closed:title' => '本讨论已关闭.',
+	'discussion:topic:closed:desc' => '本讨论已关闭，不再接收新的评论.',
 
+	'discussion:topic:description' => '主题信息',
+	'discussion:topic:toggle_status:open' => '本讨论主题已经成功开放',
+	'discussion:topic:toggle_status:open:confirm' => '确定要重新开放本主题?',
+	'discussion:topic:toggle_status:closed' => '本讨论主题已成功关闭',
+	'discussion:topic:toggle_status:closed:confirm' => '确定要关闭本主题?',
 );
