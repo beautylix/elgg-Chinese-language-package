@@ -1258,8 +1258,8 @@ return array(
 	'friendlytime:hours:singular' => "一小时前",
 	'friendlytime:days' => "%s天前",
 	'friendlytime:days:singular' => "昨天",
-	'friendlytime:date_format' => 'j F Y @ g:ia',
-	'friendlytime:date_format:short' => 'j M Y',
+	'friendlytime:date_format' => 'Y年n月j日 @ g:ia',
+	'friendlytime:date_format:short' => 'Y年n月j日',
 
 	'friendlytime:future:minutes' => "%s分钟后",
 	'friendlytime:future:minutes:singular' => "一分钟后",
@@ -1569,7 +1569,8 @@ return array(
 	'generic_comment:none' => '尚无评论',
 	'generic_comment:title' => '%s的评论',
 	'generic_comment:on' => '%s在%s上',
-	'generic_comments:latest:posted' => '发表了',
+	'generic_comment:by_owner' => '创建者的评论',
+	'generic_comments:latest:posted' => '发表了一条',
 
 	'generic_comment:notification:subject' => '回复: %s',
 	'generic_comment:notification:owner:summary' => '在%s有新评论',
