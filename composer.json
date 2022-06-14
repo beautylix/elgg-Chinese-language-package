@@ -1,11 +1,7 @@
 {
     "name": "beautylix/elgg-chinese-language-package",
     "description": "Simplified Chinese language package for Elgg.",
-    "type": "elgg-plugin",
-    "keywords": [
-        "elgg",
-        "plugin"
-    ],
+    "type": "project",
     "homepage": "https://github.com/beautylix/elgg-chinese-language-package",
     "license": "GPL-2.0-only",
     "authors": [
