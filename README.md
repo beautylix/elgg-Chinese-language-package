@@ -4,4 +4,6 @@ Elgg simplified Chinese language package
 
 #Installation
 
->composer require beautylix/Elgg-Chinese-Language-Package
+Get to root installation directory
+
+>composer require beautylix/elgg-chinese-language-package
