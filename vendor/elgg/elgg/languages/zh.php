@@ -1250,6 +1250,9 @@ return array(
 	'input:date_format' => 'Y-m-d',
 	'input:date_format:datepicker' => 'yy-mm-dd', // jQuery UI datepicker format
 	'input:time_format' => 'g:ia',
+	
+	'friendlytime:updated' => "%s - 已编辑",
+	'friendlytime:updated:title' => "创建于%s \n更新于%s",	
 
 	'friendlytime:justnow' => "刚才",
 	'friendlytime:minutes' => "%s分钟前",
@@ -1258,7 +1261,7 @@ return array(
 	'friendlytime:hours:singular' => "一小时前",
 	'friendlytime:days' => "%s天前",
 	'friendlytime:days:singular' => "昨天",
-	'friendlytime:date_format' => 'Y年n月j日 @ g:ia',
+	'friendlytime:date_format' => 'Y年n月j日G点i分',
 	'friendlytime:date_format:short' => 'Y年n月j日',
 
 	'friendlytime:future:minutes' => "%s分钟后",
