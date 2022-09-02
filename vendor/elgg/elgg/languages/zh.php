@@ -1216,6 +1216,7 @@ return array(
 	'deleteconfirm:plural' => "你真的想删除这些项目?",
 	'fileexists' => "一个文件已经上传，如果想替换，从下面选择一个新的",
 	'input:file:upload_limit' => '允许的最大文件尺寸为%s',
+	'input:container_guid:info' => '内容将发布在%s中',
 
 /**
  * User add
