@@ -138,15 +138,21 @@ return array(
  */
 	'table_columns:fromView:admin' => '管理员',
 	'table_columns:fromView:banned' => '被禁止',
+	'table_columns:fromView:checkbox' => '选择',
 	'table_columns:fromView:container' => '容器',
+	'table_columns:fromView:entity_menu' => '菜单',
 	'table_columns:fromView:excerpt' => '描述',
 	'table_columns:fromView:link' => '标题',
 	'table_columns:fromView:icon' => '图标',
 	'table_columns:fromView:item' => '项目',
 	'table_columns:fromView:language' => '语言',
+	'table_columns:fromView:last_action' => '最后行为',
+	'table_columns:fromView:last_login' => '最后登录',
 	'table_columns:fromView:owner' => '创建者',
+	'table_columns:fromView:prev_last_login' => '先前的最后登录',
 	'table_columns:fromView:time_created' => '创建时间',
 	'table_columns:fromView:time_updated' => '更新时间',
+	'table_columns:fromView:unvalidated_menu' => '菜单',
 	'table_columns:fromView:user' => '用户',
 
 	'table_columns:fromProperty:description' => '描述',
@@ -154,6 +160,7 @@ return array(
 	'table_columns:fromProperty:name' => '姓名',
 	'table_columns:fromProperty:type' => '类型',
 	'table_columns:fromProperty:username' => '用户名',
+	'table_columns:fromProperty:validated' => '已验证',
 
 	'table_columns:fromMethod:getSubtype' => '亚型',
 	'table_columns:fromMethod:getDisplayName' => '标题',
@@ -533,6 +540,15 @@ return array(
 	'admin:users:unvalidated:registered' => '已经注册: %s',
 	'admin:users:unvalidated:change_email' => '修改电邮地址',
 	'admin:users:unvalidated:change_email:user' => '为%s修改电邮地址',
+	'admin:users:inactive' => '不活跃',
+	'admin:users:inactive:last_login_before' => "显示自下面日期后未登录的用户",
+	'admin:users:inactive:last_login_before:help' => "也显示从未登录的用户.",
+	'admin:users:details:attributes' => '用户属性',
+	'admin:users:details:profile' => '个人主页信息',
+	'admin:users:details:profile:no_fields' => '尚未配置个人主页字段',
+	'admin:users:details:profile:no_information' => '尚无个人主页信息',
+	'admin:users:details:statistics' => '内容统计',	
+	
 	
 	'admin:configure_utilities:maintenance' => '维护模式',
 	'admin:upgrades' => '升级',
@@ -561,7 +577,12 @@ return array(
 	'admin:settings:users' => '用户',
 	'admin:site_icons' => "网站图标",
 	'admin:site_icons:site_icon' => "网站图标",
-	'admin:site_icons:info' => "上传一个图标，作为发送通知时的网站图标.",
+	'admin:site_icons:info' => "上传一个图标，作为favicon和发送通知时的网站图标.",
+	'admin:site_icons:font_awesome' => "Font Awesome",
+	'admin:site_icons:font_awesome:zip' => "上传ZIP文件",
+	'admin:site_icons:font_awesome:zip:help' => "为了将字体文件存储在本地服务器，你可以在此处上传从https://fontawesome.com/download下载的字体文件到服务器.",
+	'admin:site_icons:font_awesome:zip:error' => "上传的ZIP文件无法解压",
+	'admin:site_icons:font_awesome:remove_zip' => "删除上传的字体",	
 	'admin:site_settings' => "页面设置",
 	'admin:site:description' => "管理面板运行你控制全局设置. 从下面选择一个开始吧.",
 	'admin:site:opt:linktext' => "配置页面...",
@@ -591,6 +612,16 @@ return array(
 	'admin:statistics:numentities:number' => '数量',
 	'admin:statistics:numentities:searchable' => '可搜索实体',
 	'admin:statistics:numentities:other' => '其他实体',
+	
+	'admin:statistics:database' => '数据库信息',
+	'admin:statistics:database:table' => '表',
+	'admin:statistics:database:row_count' => '行数',
+
+	'admin:statistics:queue' => '队列信息',
+	'admin:statistics:queue:name' => '名称',
+	'admin:statistics:queue:row_count' => '行数',
+	'admin:statistics:queue:oldest' => '最老记录',
+	'admin:statistics:queue:newest' => '最新记录',	
 
 	'admin:widget:admin_welcome' => '欢迎',
 	'admin:widget:admin_welcome:help' => "管理区简短描述",
@@ -713,6 +744,9 @@ return array(
 	'admin:security:settings:session_bound_entity_icons' => 'Session绑定的实体图标',
 	'admin:security:settings:session_bound_entity_icons:help' => '默认情况下实体图标和session绑定，意味着产生额URL保护当前session的信息.
 图标session绑定使得图标的URL不能在session自己共享. 副作用是这些URL的缓存只帮助当前session.',
+
+    'admin:security:settings:subresource_integrity_enabled' => '子资源完整性',
+	'admin:security:settings:subresource_integrity_enabled:help' => '加metadata到js和css等子资源. 允许浏览器验证资源的内容.',
 	
 	'admin:security:settings:site_secret:intro' => 'Elgg使用密钥为不同目的创造安全标记.',
 	'admin:security:settings:site_secret:regenerate' => "重新生成页面秘密",
@@ -911,6 +945,12 @@ return array(
 	'admin:server:requirements:database:server:required' => "Elgg最低要求MySQL v5.5.3",
 	'admin:server:requirements:database:client' => "数据库客户",
 	'admin:server:requirements:database:client:required' => "Elgg要求通过pdo_mysql连接服务器数据库",
+	
+	'admin:server:requirements:webp' => "WebP支持",
+	
+	'admin:server:requirements:gc' => "Session垃圾收集",
+	'admin:server:requirements:gc:info' => "如果未配置垃圾收集，session表不能被清除. 在php.ini中配置session.gc_divisor和session.gc_probability.",
+	
 	
 	'admin:user:label:search' => "发现用户:",
 	'admin:user:label:searchbutton' => "搜索",
@@ -1398,6 +1438,9 @@ return array(
 	'config:i18n:who_can_change_language:everyone' => "任何人",
 	'config:i18n:who_can_change_language:admin_only' => "仅限管理员",
 	'config:i18n:who_can_change_language:nobody' => "无人",
+	
+	'config:users:remove_unvalidated_users_days' => "最长等待验证的天数",
+	'config:users:remove_unvalidated_users_days:help' => "到达这个天数后，未验证的用户将被自动删除。如果留空，未验证的用户不会被自动删除",
 	'config:users:can_change_username' => "允许用户修改用户名",
 	'config:users:can_change_username:help' => "如果不允许，仅仅管理员能修改用户的用户名",
 	'config:remove_branding:label' => "去除Elgg品牌推广",
@@ -1430,6 +1473,8 @@ return array(
 	'config:email_html_part_images:attach' => "附件",
 	'config:delayed_email:label' => "开启延迟邮件通知",
 	'config:delayed_email:help' => "让用户在一定周期（每天，每周)一次性收多个邮件的组合",
+	'config:message_delay:label' => "系统信息延迟",
+	'config:message_delay:help' => "成功信息显示默认秒数",
 
 	'upgrading' => '升级...',
 	'upgrade:core' => '安装已经升级.',
