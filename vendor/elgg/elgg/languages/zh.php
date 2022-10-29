@@ -443,7 +443,7 @@ return array(
 	'user:username:notfound' => '用户名%s未发现.',
 	'user:username:help' => '请注意，更改用户名将改变用户相关的全部动态链接',
 
-	'user:password:lost' => '密码丢失',
+	'user:password:lost' => '密码丢失?',
 	'user:password:hash_missing' => '非常遗憾，我们必须让你复位密码.',
 	'user:password:changereq:success' => '成功申请了一个新密码，电邮已经发出',
 	'user:password:changereq:fail' => '不能申请新密码.',
@@ -1609,6 +1609,7 @@ return array(
 	'generic_comments:post' => "发表评论",
 	'generic_comments:text' => "评论",
 	'generic_comments:latest' => "最新评论",
+	'generic_comment:login_required' => "登录后才能评论."
 	'generic_comment:posted' => "评论成功发表.",
 	'generic_comment:updated' => "评论成功更新.",
 	'entity:delete:object:comment:success' => "评论成功删除.",
