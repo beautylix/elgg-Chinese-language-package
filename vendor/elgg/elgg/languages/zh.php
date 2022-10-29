@@ -1609,7 +1609,7 @@ return array(
 	'generic_comments:post' => "发表评论",
 	'generic_comments:text' => "评论",
 	'generic_comments:latest' => "最新评论",
-	'generic_comment:login_required' => "登录后才能评论."
+	'generic_comment:login_required' => "登录后才能评论.",
 	'generic_comment:posted' => "评论成功发表.",
 	'generic_comment:updated' => "评论成功更新.",
 	'entity:delete:object:comment:success' => "评论成功删除.",
