@@ -62,10 +62,11 @@ return array(
 ',
 
 
-	'item:object:discussion' => "讨论主题",
-	'collection:object:discussion' => '讨论主题',
-
 	'groups:tool:forum' => '开启小组讨论',
+	'groups:tool:forum:description' => '允许本小组成员开始讨论',
+
+	'discussions:groups:edit:add_group_subscribers_to_discussion_comments' => '将小组订阅者加入讨论评论通知中',
+
 
 	/**
 	 * Discussion status
@@ -73,10 +74,19 @@ return array(
 	'discussion:topic:status' => '主题状态',
 	'discussion:topic:closed:title' => '本讨论已关闭.',
 	'discussion:topic:closed:desc' => '本讨论已关闭，不再接收新的评论.',
+	'discussion:topic:container' => '选择一个小组开始讨论',
+	'discussion:topic:container:help' => '默认情况下，仅限小组成员能讨论',	
 
 	'discussion:topic:description' => '主题信息',
 	'discussion:topic:toggle_status:open' => '本讨论主题已经成功开放',
 	'discussion:topic:toggle_status:open:confirm' => '确定要重新开放本主题?',
 	'discussion:topic:toggle_status:closed' => '本讨论主题已成功关闭',
 	'discussion:topic:toggle_status:closed:confirm' => '确定要关闭本主题?',
+	
+	// widgets
+	'widgets:discussions:name' => '讨论',
+	'widgets:discussions:description' => '显示最近讨论',	
+	
+	
+	
 );
